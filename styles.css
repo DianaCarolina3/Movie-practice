@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  background: #ffffff;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+.header-logo {
+  align-items: center;
+  padding-left: 30px;
+  height: 60px;
+  width: 100px;
+}
+.header-logo img {
+  width: 45px;
+  height: 50px;
+}
+.header-input {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.header-input input {
+  height: 30px;
+  width: 400px;
+  text-align: start;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+}
+.header-input input::placeholder {
+  color: #cdcad4;
+}
+.header-profile {
+  display: flex;
+  align-items: center;
+}
+.header-profile p {
+  margin: 0 10px 0 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+.header-profile figure {
+  margin: 0;
+  padding: 0;
+}
+.header-profile img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0;
+  border-radius: 50px;
+}
+.header-profile a {
+  cursor: pointer;
+  margin: 0 10px 0 0;
+}
+.header-profile .header-arrow_down {
+  width: 20px;
+}
+
+.menu {
+  display: grid;
+  float: left;
+  grid-template-columns: repeat(1, 70px);
+  grid-template-rows: repeat(1, 600px);
+  background: #fd5f60;
+  padding-top: 60px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+}
+.menu .logo-menu {
+  margin: 20px 15px 0 15px;
+}
+.menu .logo1 {
+  width: 40px;
+}
+.menu .logo2 {
+  width: 30px;
+}
+.menu .logo3 {
+  width: 25px;
+}
+.menu .logo4 {
+  width: 35px;
+}
+.logo-settings {
+  position: relative;
+  bottom: -300px;
+}
+
+.hero {
+  padding-top: 40px;
+}
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.movie-title p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: #434343;
+  margin: 20px 10px 10px 90px;
+}
+.movies-presentation {
+  width: 250px;
+  height: 155px;
+  margin-left: 10px;
+  background-image: url("assets/images/mandalorian.jpg");
+  background-size: contain;
+  border-radius: 3px;
+}
+.movie {
+  background: rgba(234, 77, 84, 0.8);
+  position: relative;
+  top: 80px;
+  height: 75px;
+  color: white;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.movie h3 {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  padding: 7px 0 7px 5px;
+}
+.movie p {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 8px 0 8px;
+}
